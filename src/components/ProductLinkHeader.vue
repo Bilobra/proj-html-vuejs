@@ -22,5 +22,6 @@ export default {
     line-height: 45px;
     font-size: 14px;
     color:$main-text-color;
+    font-family: $second-font-family;
 }
 </style>

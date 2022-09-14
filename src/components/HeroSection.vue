@@ -40,12 +40,14 @@ export default {
 }
 
 .hero_title {
-    font-size: 34px;
+    font-size: 51px;
+    font-family: $main-font-family;
 }
 
 .hero_description {
     font-size: 16px;
     color: $small-text-color;
+    font-family: $second-font-family;
     
 }
 </style>

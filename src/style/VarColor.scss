@@ -12,4 +12,10 @@ $active-icon-color: #377DFF;
 $small-text-color: #8E989F;
 $main-text-color: #1E1E1E;
 
+// FONT
+@import "~@fontsource/josefin-sans/index.css";
+@import "~@fontsource/poppins/index.css";
+
+$main-font-family: "Josefin Sans", sans-serif; 
+$second-font-family: "Poppins", sans-serif;
 
