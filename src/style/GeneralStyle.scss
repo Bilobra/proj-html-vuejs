@@ -1,0 +1,28 @@
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+    color: currentColor !important; 
+}
+
+img {
+    max-width: 100%;
+}
+
+// button
+@import './VarColor.scss';
+
+.button_default{
+    width: 110px;
+    line-height: 45px;
+    color:white;
+    background-color: $main-button-color;
+    border: none;
+    border-radius: 3px;
+    // padding: 0 20px;
+    font-size: 14px;
+}
