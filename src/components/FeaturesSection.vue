@@ -6,38 +6,76 @@
                     Popular features that your business needs
                 </h2>
                 <p class="description">
-                    Faff about a quid blower I don't want no agro bleeding chimney <br> pot burke tosser cras nice one boot
+                    Faff about a quid blower I don't want no agro bleeding chimney <br> pot burke tosser cras nice one
+                    boot
                     fanny.!
                 </p>
             </div>
-            <div class="col-3 d-flex align-items-center">
+            <div class="col-3 d-flex align-items-center justify-content-end pe-4">
                 <input type="button" value="Explore More Feature" class="button_default button_features">
             </div>
+        </div>
+
+        <div class="row row-cols-1 gap-4 justify-content-between">
+            <FeaturesCard v-for="(el,i) in grid" :key="i" :el="el" :class="el.bg? el.bg : '' " />
+
         </div>
     </section>
 </template>
 
 <script>
+import FeaturesCard from './FeaturesCard.vue'
+import grid from '../GridArray'
 export default {
     name: 'FeaturesSection',
+    components: {
+        FeaturesCard,
+    },
+    data() {
+        return {
+            grid,
+        }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
-#features{
+#features {
     max-width: 1154px;
     margin: 0 auto 150px;
 
-    .button_features{
+    .button_features {
         width: 215px;
     }
 
-    .description{
+    .description {
         padding-right: 50px;
     }
 
-    .title{
-        margin:0;
+    .title {
+        margin: 0;
+    }
+
+    .row {
+
+        .green_bg:hover {
+            background-color: #6CDAC1;
+            color: white !important;
+        }
+
+        .blu_bg:hover {
+            background-color: #377DFF;
+            color: white !important;
+
+        }
+
+        .salmon_bg:hover {
+            background-color: #FF796D;
+            color: white !important;
+
+        }
+
+
     }
 }
 </style>

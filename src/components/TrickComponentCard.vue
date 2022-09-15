@@ -8,6 +8,7 @@
             <p class="description">{{trick.description}}</p>
         </div>
     </div>
+    
 </template>
 
 <script>

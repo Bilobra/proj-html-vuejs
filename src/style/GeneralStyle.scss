@@ -4,9 +4,9 @@ menu {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none !important;
-    color: currentColor !important; 
+    color: currentColor !important;
 }
 
 img {
@@ -16,10 +16,10 @@ img {
 // button
 @import './VarColor.scss';
 
-.button_default{
+.button_default {
     width: 110px;
     line-height: 45px;
-    color:white;
+    color: white;
     background-color: $main-button-color;
     border: none;
     border-radius: 3px;
@@ -42,3 +42,4 @@ img {
     font-size: 16px;
     margin-bottom: 55px;
 }
+
