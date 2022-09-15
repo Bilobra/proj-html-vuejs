@@ -20,6 +20,6 @@ export default {
 <style lang="scss" scoped>
 #marketing {
     max-width: 1154px;
-    margin: 0 auto;
+    margin: 0 auto 150px;
 }
 </style>

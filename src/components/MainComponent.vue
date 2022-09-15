@@ -6,17 +6,20 @@
             </div>
         </section>
         <MarketingSection />
+        <TrickSection />
     </main>
 </template>
 
 <script>
 import HeroSection from './HeroSection.vue'
 import MarketingSection from './MarketingSection.vue'
+import TrickSection from './TrickSection.vue'
 export default {
     name: 'MainComponent',
     components: {
         HeroSection,
         MarketingSection,
+        TrickSection,
     }
 }
 </script>
