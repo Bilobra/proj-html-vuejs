@@ -9,7 +9,8 @@
                     Faff about only a quid blower I don't want no agro bleeding chimrey pot burke tosser cras nice one
                     boot fanny.!
                 </p>
-                <TrickComponentCard v-for ="(trick,i) in tricks" :key="i" :trickT="trick.title" :trickP="trick.description" :trickImg="trick.img"/>
+                <TrickComponentCard v-for="(trick,i) in tricks" :key="i" :trick="trick"
+                    :class="trick.current? 'active_card' : ''" />
             </div>
             <div class="col col-6">
                 <div class="trick_img">
@@ -28,8 +29,8 @@ export default {
     components: {
         TrickComponentCard,
     },
-    data(){
-        return{
+    data() {
+        return {
             tricks,
         }
     }
@@ -42,5 +43,24 @@ export default {
 #tricks {
     max-width: 1154px;
     margin: 0 auto 150px;
+}
+
+.trick_title {
+    font-family: $main-font-family;
+    color: $main-text-color;
+    font-size: 40px;
+
+}
+
+.trick_description {
+    font-family: $second-font-family;
+    color: $small-text-color;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+
+.active_card {
+
+    box-shadow: 0px 40px 20px rgb(0 0 0 / 19%);
 }
 </style>
