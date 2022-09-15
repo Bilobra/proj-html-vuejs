@@ -1,7 +1,7 @@
 <template>
     <div class="col-3">
         <div class="card p-2" >
-            <img src="../assets/img/17.jpg" class="card-img-top" alt="">
+            <img :src="image" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="little_title">Life Lack Meaning</h5>
                 <p class="description">
@@ -17,6 +17,9 @@
 <script>
 export default {
     name: 'PostsCard',
+    props:{
+        image:String,
+    }
 }
 </script>
 
