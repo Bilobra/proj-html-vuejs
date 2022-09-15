@@ -27,10 +27,6 @@ export default {
     transition: all 300ms;
 
 
-    .little_title {
-        font-family: $main-font-family;
-        // color: #1E1E1E;
-        font-size: 20px;
-    }
+    
 }
 </style>

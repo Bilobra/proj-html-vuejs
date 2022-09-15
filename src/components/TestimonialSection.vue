@@ -1,7 +1,7 @@
 <template>
     <section id="testimonials">
         <div class="wrap_testimonials d-flex align-items-center">
-            <div class="testimonials_content">
+            <div class="content">
                 <h2 class="title mb-4">
                     Our Testimonials
                 </h2>
@@ -79,11 +79,7 @@ export default {
     background-repeat: no-repeat;
 }
 
-.testimonials_content {
-    max-width: 560px;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .card_container {
     max-width: 1154px;
