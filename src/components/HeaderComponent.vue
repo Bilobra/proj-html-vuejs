@@ -1,13 +1,13 @@
 <template>
     <header>
-        <nav >
-            <ul class="d-flex gap-3 align-items-center link-wrapper">
+        <nav>
+            <ul class="d-flex gap-4 align-items-center link-wrapper">
                 <li class="me-auto">
                     <img src="../assets/img/logo-2.png" alt="logo" class="img_logo">
                 </li>
-                
-                <ProductLinkHeader v-for="(link,i) in LinkArray" :key="i" :link="link.text" >
-                    
+
+                <ProductLinkHeader v-for="(link,i) in LinkArray" :key="i" :link="link.text" :class="link.current? 'border_active' : ''">
+
                 </ProductLinkHeader>
 
                 <li class="p-3 icons_header">
@@ -29,7 +29,7 @@ import ProductLinkHeader from '../components/ProductLinkHeader.vue'
 import LinkArray from '../LinkArray'
 export default {
     name: 'HeaderComponent',
-    components:{
+    components: {
         ProductLinkHeader,
     },
     data() {
@@ -41,27 +41,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header{
+@import '../style/VarColor.scss';
+
+header {
     height: 80px;
 
-    nav{
+    nav {
         max-width: 1154px;
-        margin:0 auto;
-        padding-top: 14px;
+        margin: 0 auto;
+        padding: 14px 0;
+        // height: 100%;
     }
-    
-    .link_wrapper{
+
+    .link_wrapper {
         height: 100%;
-        
+
 
     }
-    .img_logo{
+
+    .img_logo {
         height: 45px;
         width: auto;
     }
 
-    .icons_header{
+    .icons_header {
         font-size: 12px;
+    }
+
+    .border_active, .link_list:hover {
+        border-bottom: 2px solid $active-icon-color;
+        color : $active-icon-color;
     }
 }
 </style>

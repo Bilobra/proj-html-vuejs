@@ -9,7 +9,7 @@
                 in some form
             </p>
             <div class="hero_button">
-                <input type="button" value="Read More" class="button_default">
+                <input type="button" value="Read More" class="button_default button_hero">
 
             </div>
         </div>
@@ -49,5 +49,8 @@ export default {
     color: $small-text-color;
     font-family: $second-font-family;
     
+}
+.button_hero{
+    width: 140px;
 }
 </style>
