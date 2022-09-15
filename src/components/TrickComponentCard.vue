@@ -1,5 +1,5 @@
 <template>
-    <div class="col d-flex py-5">
+    <div class="col d-flex pt-5">
         <div class="img_trick">
             <img :src="trick.img" alt="">
         </div>

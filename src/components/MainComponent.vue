@@ -7,6 +7,7 @@
         </section>
         <MarketingSection />
         <TrickSection />
+        <FeaturesSection />
     </main>
 </template>
 
@@ -14,12 +15,14 @@
 import HeroSection from './HeroSection.vue'
 import MarketingSection from './MarketingSection.vue'
 import TrickSection from './TrickSection.vue'
+import FeaturesSection from './FeaturesSection.vue'
 export default {
     name: 'MainComponent',
     components: {
         HeroSection,
         MarketingSection,
         TrickSection,
+        FeaturesSection,
     }
 }
 </script>

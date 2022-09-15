@@ -2,10 +2,10 @@
     <section id="tricks">
         <div class="row row-cols-1">
             <div class="col col-6">
-                <h2 class="trick_title">
+                <h2 class="title">
                     Get tips tricks on how to skyrocket your sales.
                 </h2>
-                <p class="trick_description">
+                <p class="description">
                     Faff about only a quid blower I don't want no agro bleeding chimrey pot burke tosser cras nice one
                     boot fanny.!
                 </p>
@@ -42,22 +42,10 @@ export default {
 
 #tricks {
     max-width: 1154px;
-    margin: 0 auto 150px;
+    margin: 0 auto 120px;
 }
 
-.trick_title {
-    font-family: $main-font-family;
-    color: $main-text-color;
-    font-size: 40px;
 
-}
-
-.trick_description {
-    font-family: $second-font-family;
-    color: $small-text-color;
-    font-size: 16px;
-    margin-bottom: 55px;
-}
 
 .active_card {
 
