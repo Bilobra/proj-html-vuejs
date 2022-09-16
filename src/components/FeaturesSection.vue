@@ -62,6 +62,7 @@ export default {
     left: -595px;
     bottom: 70px;
     // background-position: left;
+    z-index:-1;
 }
 
 #features {

@@ -8,7 +8,7 @@
                 If you are planning on developing a produc landing
             </p>
         </div>
-        <div class="row row-cols-1 justify-content-between">
+        <div class="row row-cols-1 justify-content-center">
             <PostsCard v-for="(card,i) in CardImage" :key="i" :image="card.image" />
 
         </div>
@@ -49,6 +49,7 @@ export default {
         max-width: 1154px;
         margin: 0 auto;
         padding: 110px 0;
+        gap:28px;
 
     }
 }
