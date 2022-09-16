@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav>
-            <ul class="d-flex gap-4 align-items-center link-wrapper">
+            <ul class="d-flex gap-4 align-items-center link-wrapper p-0">
                 <li class="me-auto">
                     <img src="../assets/img/logo-2.png" alt="logo" class="img_logo">
                 </li>

@@ -24,8 +24,8 @@ export default {
 <style lang="scss">
 @import './style/GeneralStyle.scss';
 
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
+#app {
+//  max-width: 100vw;
 
-// }
+}
 </style>

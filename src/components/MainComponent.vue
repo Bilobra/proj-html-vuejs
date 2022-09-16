@@ -41,10 +41,11 @@ export default {
 
 #hero_section {
     background-color: $jumbo-bg-color;
-    margin-bottom: 150px;
+    margin: 0 auto 150px;
+    max-width: 1441px;
 
     .container_hero_section {
-        max-width: 1441px;
+        max-width: 1360px;
         margin: 0 auto;
     }
 }
