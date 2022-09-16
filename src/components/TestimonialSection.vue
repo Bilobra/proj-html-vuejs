@@ -70,6 +70,7 @@ export default {
 
 #testimonials {
     background-color: #EFF1FE;
+    padding-bottom: 110px;
 }
 
 .wrap_testimonials {

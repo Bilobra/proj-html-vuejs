@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
 #posts {
     background-color: #EFF1FE;
-    padding: 110px 0;
+    // padding: 110px 0;
 
     .row {
         max-width: 1154px;

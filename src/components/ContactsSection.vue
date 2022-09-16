@@ -9,22 +9,27 @@
             </p>
         </div>
         <div class="row row-cols-1">
-           
-                <MapComponent/>
-           
+
+            <MapComponent />
+            <FormComponent />
+
         </div>
     </section>
 </template>
 
 <script>
 import MapComponent from './MapComponent.vue'
+import FormComponent from './FormComponent.vue'
 export default {
     name: 'ContactsSection',
     components: {
         MapComponent,
+        FormComponent,
     }
 }
 </script>
+
+
 
 <style lang="scss" scoped>
 #contacts {
@@ -32,11 +37,12 @@ export default {
     padding: 110px 0;
 }
 
-.row{
+.row {
     max-width: 1154px;
     margin: 0 auto;
 }
-.content{
+
+.content {
     margin-bottom: 110px;
 }
 </style>

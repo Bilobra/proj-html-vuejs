@@ -12,11 +12,11 @@
                 <font-awesome-icon icon="fa-solid fa-turn-up" class="blue_link fs_icon" />
                 <p class="description blue_link m-0">Indicazioni</p>
             </div>
-           
+
         </div>
         <div class="zoom_wrapper d-flex flex-column">
-            <font-awesome-icon icon="fa-solid fa-plus" class="zoom_icons zoom_plus"/>
-            <font-awesome-icon icon="fa-solid fa-minus" class="zoom_icons"/>
+            <font-awesome-icon icon="fa-solid fa-plus" class="zoom_icons zoom_plus" />
+            <font-awesome-icon icon="fa-solid fa-minus" class="zoom_icons" />
         </div>
     </div>
 </template>
@@ -42,13 +42,16 @@ export default {
     border-radius: 3px;
     box-shadow: 2px 1px 6px #8080808c;
 }
+
 .description {
     font-size: 14px;
 }
+
 .blue_link {
     color: #377DFF
 }
-.fs_icon{
+
+.fs_icon {
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -57,25 +60,26 @@ export default {
     font-weight: 600;
 }
 
-.zoom_wrapper{
+.zoom_wrapper {
     position: absolute;
-    bottom: 10px;
+    // bottom: 10px;
+    top: 320px;
     right: 25px;
     background-color: white;
     padding: 5px;
     border-radius: 2px;
     box-shadow: 2px 1px 6px #8080808c;
-    
-    
-    .zoom_plus{
+
+
+    .zoom_plus {
         border-bottom: 1px solid #00000026;
     }
-    .zoom_icons{
+
+    .zoom_icons {
         font-size: 20px;
         padding: 12px;
-        color: #495057
-        // font-weight: 600;
+        color: #495057 // font-weight: 600;
     }
-    
+
 }
 </style>
