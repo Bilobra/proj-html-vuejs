@@ -6,15 +6,20 @@
                     <img src="../assets/img/logo-2.png" alt="logo" class="img_logo">
                 </li>
 
-                <ProductLinkHeader v-for="(link,i) in LinkArray" :key="i" :link="link.text" :class="link.current? 'border_active' : ''">
+                <ProductLinkHeader v-for="(link,i) in LinkArray" :key="i" :link="link.text"
+                    :class="link.current? 'border_active' : ''">
 
                 </ProductLinkHeader>
 
-                <li class="p-3 icons_header">
+                <li class="p-2 icons_header">
                     <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+
                 </li>
-                <li class="p-3 icons_header">
+                <li class="p-2 icons_header">
                     <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+                    <div class="circle_icon">
+                        <p class="number_centre">0</p>
+                    </div>
                 </li>
                 <li>
                     <input type="button" value="Get Started" class="button_default">
@@ -65,12 +70,33 @@ header {
     }
 
     .icons_header {
-        font-size: 12px;
+        font-size: 14px;
+        position: relative;
+
+        .circle_icon {
+            background-color: #377DFF;
+            color: white;
+            border-radius: 50%;
+            // padding: 2px;
+            width: 18px;
+            height: 18px;
+            aspect-ratio: 1/1;
+            vertical-align: middle;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: -2px;
+            z-index: -1;
+            font-size: 10px;
+
+           
+        }
     }
 
-    .border_active, .link_list:hover {
+    .border_active,
+    .link_list:hover {
         border-bottom: 2px solid $active-icon-color;
-        color : $active-icon-color;
+        color: $active-icon-color;
     }
 }
 </style>

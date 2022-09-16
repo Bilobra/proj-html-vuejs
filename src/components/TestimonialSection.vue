@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="card_container">
-            <div class="row row-cols-1 gap-3 d-flex justify-content-center">
+            <div class="row row-cols-1 gap-3 d-flex justify-content-center row_cards">
                 <div class=" col_card col-6">
                     <figure class="img_testimonial">
                         <img src="../assets/img/26.jpeg" alt="">
@@ -27,6 +27,37 @@
                     </p>
 
                 </div>
+
+                <div class=" col_card col_card_rg col-6">
+                    <figure class="img_testimonial">
+                        <img src="../assets/img/26.jpeg" alt="">
+                    </figure>
+                    <div>
+                        <span class="title">Juli Aaan</span>
+                        <span class="description">- COO Softbox</span>
+                    </div>
+                    <p class="description">
+                        At vero eos et accusamus et iusto odio dignissimos dicusimus qui blanditiis prasentium vero eos
+                        et consectetur accus adip adip.
+                    </p>
+
+                </div>
+
+                <div class=" col_card col_card_lf col-6">
+                    <figure class="img_testimonial">
+                        <img src="../assets/img/26.jpeg" alt="">
+                    </figure>
+                    <div>
+                        <span class="title">Juli Aaan</span>
+                        <span class="description">- COO Softbox</span>
+                    </div>
+                    <p class="description">
+                        At vero eos et accusamus et iusto odio dignissimos dicusimus qui blanditiis prasentium vero eos
+                        et consectetur accus adip adip.
+                    </p>
+
+                </div>
+
                 <div class=" col_card col-6">
                     <figure class="img_testimonial">
                         <img src="../assets/img/27.jpeg" alt="">
@@ -80,6 +111,31 @@ export default {
     background-repeat: no-repeat;
 }
 
+.row_cards {
+    position: relative;
+    z-index: 99;
+
+    .col_card_rg {
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        z-index: -1;
+        max-width: 465px !important;
+        box-shadow: -1px 6px 20px rgb(0 0 0 / 25%) !important;
+
+    }
+
+    .col_card_lf {
+        position: absolute;
+        top: 15px;
+        right: 100px;
+        z-index: -1;
+        max-width: 465px !important;
+        box-shadow: -1px 6px 20px rgb(0 0 0 / 25%) !important;
+    }
+
+}
+
 
 
 .card_container {
@@ -100,7 +156,6 @@ export default {
         box-shadow: 0px 4px 20px #0000001f;
         margin-bottom: 50px;
         background-color: #FFFFFF;
-
 
 
         img {

@@ -19,7 +19,7 @@ export default {
     @import '../style/VarColor.scss';
 .link_list {
     align-self: flex-end;
-    padding-bottom: 20px ;
+    padding-bottom: 12px ;
     // line-height: 45px;
     font-size: 14px;
     color:$main-text-color;

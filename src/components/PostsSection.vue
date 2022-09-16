@@ -26,13 +26,13 @@ export default {
         return {
             CardImage: [
                 {
-                    image: require('../assets/img/18.jpg'),
-                },
-                {
                     image: require('../assets/img/19.jpg'),
                 },
                 {
-                    image: require('../assets/img/20.jpg'),
+                    image: require('../assets/img/18.jpg'),
+                },
+                {
+                    image: require('../assets/img/17.jpg'),
                 },
             ]
         }

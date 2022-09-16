@@ -9,6 +9,9 @@
                 </p>
                 
             </div>
+            <div class="badge_date description m-0">
+                November 28,2019
+            </div>
         </div>
 
     </div>
@@ -35,6 +38,19 @@ export default {
     .description{
         line-height: 30px;
         margin:0;
+    }
+    .card{
+        position: relative;
+    }
+    .badge_date{
+        padding: 3px 8px;
+        line-height: 20px;
+        position: absolute;
+        background-color: white;
+        border-radius: 3px;
+        top: 15px;
+        left:15px;
+        font-size: 12px;
     }
 }
 </style>
