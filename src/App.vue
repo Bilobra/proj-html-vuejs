@@ -24,8 +24,8 @@ export default {
 <style lang="scss">
 @import './style/GeneralStyle.scss';
 
-#app {
-//  max-width: 100vw;
+// #app {
+// //  max-width: 100vw;
 
-}
+// }
 </style>

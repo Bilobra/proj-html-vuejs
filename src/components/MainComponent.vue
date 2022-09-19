@@ -1,7 +1,7 @@
 <template>
     <main>
         <section id="hero_section">
-            .<div class="container_hero_section">
+            <div class="container_hero_section">
                 <HeroSection />
             </div>
         </section>
